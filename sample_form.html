@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Sample SignUp Form</h1>
+    <form action="https://store.steampowered.com/" method="get" target="_blank">
+      <fieldset>
+        <legend><h2>Welcome to sepSite</h2></legend>
+        <label for="name">FirstName</label>
+        <input type="search" name="first" id="un" autofocus required />
+        <label for="lastname" style="margin-left: 20px">LastName</label>
+        <input type="search" name="last" id="lastname" required />
+        <label for="birth" style="margin-left: 110px">when were you born</label>
+        <input type="date" name="birth" id="birth" required />
+        <br />
+        <br />
+        <label for="email" style="margin-top: 20px">Enter email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          maxlength="100"
+          placeholder="example@gmail.com"
+        />
+        <label style="margin-left: 20px" for="number">your phone</label>
+        <input type="number" name="phonenum" id="number" required />
+        <br /><br />
+        <label for="gender"
+          >what should we call you <br />
+          <label for="male" style="margin-left: 20px">male</label>
+          <input type="radio" name="gen" id="male" value="male" />
+          <label for="female" style="margin-left: 15px">Female</label>
+          <input type="radio" name="gen" id="female" value="female" />
+          <label for="other" style="margin-left: 30px">You tell us</label>
+          <input type="search" name="gen" id="other" />
+        </label>
+        <br /><br />
+        <label for="job" style="margin-left: 20px">Current activity</label>
+        <input type="search" name="job" id="job" />
+        <label for="marriage" style="margin-left: 20px">Marriage Status</label>
+        <select name="" id="marriage">
+          <optgroup label="chose one">
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+            <option value="open">open</option>
+          </optgroup>
+        </select>
+        <br /><br />
+        <label for="address">Put address in</label>
+        <textarea name="address" id="address" cols="110"></textarea>
+        <br /><br />
+        <label for="idpic" style="margin-left: 20px">upload your id</label>
+        <input type="file" name="idpic" id="idpic" />
+        <br /><br />
+        <label for="courses" style="margin-left: 5px"
+          >Select what you want to learn</label
+        ><br />
+        <label for="html" style="margin-left: 10px">HTML</label>
+        <input type="checkbox" name="front" id="html" value="html" />
+        <label for="css" style="margin-left: 10px">CSS</label>
+        <input type="checkbox" name="css" id="css" value="css" />
+        <label for="js" style="margin-left: 10px">JS</label>
+        <input type="checkbox" name="js" id="js" />
+        <label for="react" style="margin-left: 10px">React</label>
+        <input type="checkbox" name="react" id="react" />
+      </fieldset>
+      <button type="submit" style="margin: 10px 30px">Lets Go!</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
